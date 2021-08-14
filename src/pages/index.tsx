@@ -4,6 +4,7 @@ import { NextPage } from "next";
 import { classnames } from "tailwindcss-classnames";
 
 import { BorderBalloon } from "../components/BorderBalloon";
+import { ConicBalloon } from "../components/ConicBalloon";
 import { PolygonBalloon } from "../components/PolygonBalloon";
 
 const Page: NextPage = () => {
@@ -22,9 +23,11 @@ const Page: NextPage = () => {
       <div>
         <BorderBalloon>Balloon_A</BorderBalloon>
       </div>
-
       <div>
         <PolygonBalloon>Balloon_B</PolygonBalloon>
+      </div>
+      <div>
+        <ConicBalloon>Balloon_C</ConicBalloon>
       </div>
     </main>
   );
