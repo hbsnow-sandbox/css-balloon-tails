@@ -1,0 +1,27 @@
+.balloon::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  transform: translate(-17px, -50%);
+  background-image: conic-gradient(
+    transparent 0.9272952180016122rad,
+    theme("colors.blue.500") 0,
+    theme("colors.blue.500") 2.214297435588181rad,
+    transparent 0
+  );
+  @apply absolute top-1/2 left-0;
+}
+
+.balloon::after {
+  content: "";
+  width: 16px;
+  height: 12px;
+  transform: translate(-16px, -50%);
+  background-image: conic-gradient(
+    transparent 0.9272952180016122rad,
+    theme("colors.blue.200") 0,
+    theme("colors.blue.200") 2.214297435588181rad,
+    transparent 0
+  );
+  @apply absolute top-1/2 left-0;
+}

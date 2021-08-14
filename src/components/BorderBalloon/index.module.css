@@ -1,0 +1,15 @@
+.balloon::before {
+  content: "";
+  border-width: 6px 8px 6px 0;
+  border-color: transparent theme("colors.blue.500") transparent transparent;
+  transform: translate(-9px, -50%);
+  @apply absolute top-1/2 left-0 w-0 h-0 border-solid;
+}
+
+.balloon::after {
+  content: "";
+  border-width: 6px 8px 6px 0;
+  border-color: transparent theme("colors.blue.200") transparent transparent;
+  transform: translate(-8px, -50%);
+  @apply absolute top-1/2 left-0 w-0 h-0 border-solid;
+}
